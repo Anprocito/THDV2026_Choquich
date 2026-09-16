@@ -47,7 +47,7 @@ public class Clase4 : MonoBehaviour
                     terminado = true;
                     Debug.Log("Timer Terminado");
 
-                    MostrarPares();
+                    MostrarParesMayores();
                 }
 
                
@@ -63,17 +63,17 @@ public class Clase4 : MonoBehaviour
         }
     }
 
-    //void MostrarParesMayores()
-    //{
-        
+    void MostrarParesMayores()
+    {
+        int index = 0;
 
-        //while (MostrarPares())
-        //{
-           
-            
-            //Debug.Log("Par: " + segundospares[i]);
-        //}
-    //}
+        while (index < segundospares.Length)
+        {
+           if (segundospares [index] >= 5)
+             Debug.Log("Par: " + segundospares[index]);
+            index++;
+        }
+    }
 
 }
 
